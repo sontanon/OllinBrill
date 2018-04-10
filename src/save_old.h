@@ -1,0 +1,1 @@
+void save_old(void);

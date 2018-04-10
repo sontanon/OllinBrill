@@ -1,0 +1,11 @@
+void flat_laplacian(double *u,
+	const double *f,
+	double *res,
+	const double *s,
+	const double uInf,
+	const int robin,
+	const int r_sym,
+	const int z_sym,
+	const int perm_use,
+	const int precond_use, 
+	const int low_rank_use);

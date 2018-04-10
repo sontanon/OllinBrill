@@ -1,0 +1,1 @@
+void calculate_alpha_second_covariant_derivative(void);

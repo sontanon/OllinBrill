@@ -1,0 +1,1 @@
+void auxiliary_geometry(void);

@@ -1,0 +1,1 @@
+void idata_schwarschild(void);

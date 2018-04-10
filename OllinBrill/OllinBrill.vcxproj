@@ -18,6 +18,129 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\accumulate.h" />
+    <ClInclude Include="..\src\ah.h" />
+    <ClInclude Include="..\src\ah_bicubic_interpolator.h" />
+    <ClInclude Include="..\src\ah_geometry.h" />
+    <ClInclude Include="..\src\ah_integrator.h" />
+    <ClInclude Include="..\src\ah_interpolator.h" />
+    <ClInclude Include="..\src\ah_mask.h" />
+    <ClInclude Include="..\src\ah_param.h" />
+    <ClInclude Include="..\src\ah_sources.h" />
+    <ClInclude Include="..\src\ah_tools.h" />
+    <ClInclude Include="..\src\allocate_arrays.h" />
+    <ClInclude Include="..\src\analysis_metric.h" />
+    <ClInclude Include="..\src\arrays.h" />
+    <ClInclude Include="..\src\array_init.h" />
+    <ClInclude Include="..\src\auxiliary_geometry.h" />
+    <ClInclude Include="..\src\boundary.h" />
+    <ClInclude Include="..\src\constraints.h" />
+    <ClInclude Include="..\src\derivatives.h" />
+    <ClInclude Include="..\src\elliptic_tools.h" />
+    <ClInclude Include="..\src\evolve.h" />
+    <ClInclude Include="..\src\files.h" />
+    <ClInclude Include="..\src\flat_laplacian.h" />
+    <ClInclude Include="..\src\flat_laplacian_csr_gen.h" />
+    <ClInclude Include="..\src\gauge.h" />
+    <ClInclude Include="..\src\general_elliptic.h" />
+    <ClInclude Include="..\src\general_elliptic_csr_gen.h" />
+    <ClInclude Include="..\src\geometry_A2.h" />
+    <ClInclude Include="..\src\geometry_ADelta.h" />
+    <ClInclude Include="..\src\geometry_alpha_derivatives.h" />
+    <ClInclude Include="..\src\geometry_alpha_second_covariant_derivative.h" />
+    <ClInclude Include="..\src\geometry_D2alpha.h" />
+    <ClInclude Include="..\src\geometry_detrace.h" />
+    <ClInclude Include="..\src\geometry_divA.h" />
+    <ClInclude Include="..\src\geometry_inverse_metric.h" />
+    <ClInclude Include="..\src\geometry_ricci.h" />
+    <ClInclude Include="..\src\geometry_upA.h" />
+    <ClInclude Include="..\src\idata_brillwave.h" />
+    <ClInclude Include="..\src\idata_schwarschild.h" />
+    <ClInclude Include="..\src\idata_testbed.h" />
+    <ClInclude Include="..\src\initial.h" />
+    <ClInclude Include="..\src\low_rank.h" />
+    <ClInclude Include="..\src\maximal_slicing_elliptic_coefficients.h" />
+    <ClInclude Include="..\src\one_step.h" />
+    <ClInclude Include="..\src\param.h" />
+    <ClInclude Include="..\src\pardiso_die.h" />
+    <ClInclude Include="..\src\pardiso_init.h" />
+    <ClInclude Include="..\src\pardiso_param.h" />
+    <ClInclude Include="..\src\pardiso_wrapper.h" />
+    <ClInclude Include="..\src\parser.h" />
+    <ClInclude Include="..\src\radbound.h" />
+    <ClInclude Include="..\src\save_old.h" />
+    <ClInclude Include="..\src\shift_derivadvect.h" />
+    <ClInclude Include="..\src\shift_divergence.h" />
+    <ClInclude Include="..\src\shift_geometry.h" />
+    <ClInclude Include="..\src\shift_sources.h" />
+    <ClInclude Include="..\src\sources_geometry.h" />
+    <ClInclude Include="..\src\sources_lapse.h" />
+    <ClInclude Include="..\src\symmetries.h" />
+    <ClInclude Include="..\src\tools.h" />
+    <ClInclude Include="..\src\update.h" />
+    <ClInclude Include="..\src\write_files.h" />
+    <ClInclude Include="..\src\write_flags.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\accumulate.cpp" />
+    <ClCompile Include="..\src\ah.cpp" />
+    <ClCompile Include="..\src\ah_bicubic_interpolator.cpp" />
+    <ClCompile Include="..\src\ah_geometry.cpp" />
+    <ClCompile Include="..\src\ah_integrator.cpp" />
+    <ClCompile Include="..\src\ah_interpolator.cpp" />
+    <ClCompile Include="..\src\ah_mask.cpp" />
+    <ClCompile Include="..\src\ah_sources.cpp" />
+    <ClCompile Include="..\src\ah_tools.cpp" />
+    <ClCompile Include="..\src\allocate_arrays.cpp" />
+    <ClCompile Include="..\src\array_init.cpp" />
+    <ClCompile Include="..\src\auxiliary_geometry.cpp" />
+    <ClCompile Include="..\src\boundary.cpp" />
+    <ClCompile Include="..\src\constraints.cpp" />
+    <ClCompile Include="..\src\derivatives.cpp" />
+    <ClCompile Include="..\src\elliptic_tools.cpp" />
+    <ClCompile Include="..\src\evolve.cpp" />
+    <ClCompile Include="..\src\flat_laplacian.cpp" />
+    <ClCompile Include="..\src\flat_laplacian_csr_gen.cpp" />
+    <ClCompile Include="..\src\gauge.cpp" />
+    <ClCompile Include="..\src\general_elliptic.cpp" />
+    <ClCompile Include="..\src\general_elliptic_csr_gen.cpp" />
+    <ClCompile Include="..\src\geometry_A2.cpp" />
+    <ClCompile Include="..\src\geometry_ADelta.cpp" />
+    <ClCompile Include="..\src\geometry_alpha_derivatives.cpp" />
+    <ClCompile Include="..\src\geometry_alpha_second_derivative.cpp" />
+    <ClCompile Include="..\src\geometry_D2alpha.cpp" />
+    <ClCompile Include="..\src\geometry_detrace.cpp" />
+    <ClCompile Include="..\src\geometry_divA.cpp" />
+    <ClCompile Include="..\src\geometry_inverse_metric.cpp" />
+    <ClCompile Include="..\src\geometry_ricci.cpp" />
+    <ClCompile Include="..\src\geometry_upA.cpp" />
+    <ClCompile Include="..\src\idata_brillwave.cpp" />
+    <ClCompile Include="..\src\idata_schwarschild.cpp" />
+    <ClCompile Include="..\src\idata_testbed.cpp" />
+    <ClCompile Include="..\src\initial.cpp" />
+    <ClCompile Include="..\src\low_rank.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\maximal_slicing_elliptic_coefficients.cpp" />
+    <ClCompile Include="..\src\metric_analysis.cpp" />
+    <ClCompile Include="..\src\one_step.cpp" />
+    <ClCompile Include="..\src\pardiso_die.cpp" />
+    <ClCompile Include="..\src\pardiso_init.cpp" />
+    <ClCompile Include="..\src\pardiso_wrapper.cpp" />
+    <ClCompile Include="..\src\parser.cpp" />
+    <ClCompile Include="..\src\radbound.cpp" />
+    <ClCompile Include="..\src\save_old.cpp" />
+    <ClCompile Include="..\src\shift_derivadvect.cpp" />
+    <ClCompile Include="..\src\shift_divergence.cpp" />
+    <ClCompile Include="..\src\shift_geometry.cpp" />
+    <ClCompile Include="..\src\shift_sources.cpp" />
+    <ClCompile Include="..\src\sources_geometry.cpp" />
+    <ClCompile Include="..\src\sources_lapse.cpp" />
+    <ClCompile Include="..\src\symmetries.cpp" />
+    <ClCompile Include="..\src\tools.cpp" />
+    <ClCompile Include="..\src\update.cpp" />
+    <ClCompile Include="..\src\write_files.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{8BD2DA7F-0371-4F9F-ACD8-B4737A7F2E53}</ProjectGuid>
@@ -29,26 +152,27 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>Intel C++ Compiler 18.0</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>Intel C++ Compiler 18.0</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>Intel C++ Compiler 18.0</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <UseIntelMKL>Parallel</UseIntelMKL>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>Intel C++ Compiler 18.0</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -75,6 +199,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\sonta\Desktop\libconfig;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -98,16 +223,22 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
+      <Optimization>MaxSpeedHighLevel</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <OpenMP>GenerateParallelCode</OpenMP>
+      <OptimizeForWindowsApplication>true</OptimizeForWindowsApplication>
+      <AdditionalIncludeDirectories>C:\Users\sonta\Desktop\libconfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\sonta\Desktop\libconfig;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libconfig.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -146,19 +277,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="OllinBrill.cpp" />
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

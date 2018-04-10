@@ -1,0 +1,1 @@
+void allocate_arrays(const bool status);
