@@ -1,0 +1,179 @@
+# GRID PARAMETERS.
+# Spacing and number of interior points.
+# For now dr must be equal to dz!
+#dr = 0.0625
+#dz = 0.0625
+#NrInterior = 128
+#NzInterior = 128
+#dr = 0.03125
+#dz = 0.03125
+#NrInterior = 256
+#NzInterior = 256
+#dr = 0.015625
+#dz = 0.015625
+#NrInterior = 512
+#NzInterior = 512
+#
+# Other resolutions.
+#
+#dr = 0.08
+#dz = 0.08
+#NrInterior = 500
+#NzInterior = 500
+dr = 0.04
+dz = 0.04
+NrInterior = 1000
+NzInterior = 1000
+#dr = 0.02
+#dz = 0.02
+#NrInterior = 2000
+#NzInterior = 2000
+
+# Final time: a multiple of dr is recommended.
+FinalTime = 25.00
+
+# OUTPUT.
+# Check for constraints every t = constraintCheck * dr.
+constraintCheck = 2
+# Output 2D files every t = Noutput2D * dr.
+Noutput2D = 2
+# Directory name.
+dirname = "Brill Collapse Long Evolution"
+
+# BOUNDARY.
+# flat, static, radiative.
+boundtype = "radiative"
+
+# SLICING.
+slicing = "maximal" # 1+log, harmonic, isotropic, maximal.
+ilapse = "one" # one, isotropic, test, precolapsed2, precolapsed4, gaussian.
+# Gaussian lapse parameters.
+gl_alpha0 = 0.00
+gl_rr0 = 0.00
+# Standard 1+log has gauge_f = 2.0, whereas harmonic slicing has gauge_f = 1.0.
+gauge_f = 0.0 
+
+# SHIFT
+shift = "none" # none, static, parabolic, hyperbolic.
+ishift = "zero" # zero, gaussian.
+# Gaussian shift parameters.
+gs_beta0 = 0.0
+gs_rr0 = 0.0
+# Parameters for parabolic/hyperbolic shift.
+driver_c = 0.00
+driver_eta = 0.00
+
+# EVOLUTION.
+order = "four" # two, four.
+integrator = "rk4" # icn, rk4.
+# Calculate constraint norms up to half of the grid.
+interior_norm = 1 # 0 (off), 1 (on).
+# Reduce boundary every t = dr by one point for calculating constraint norms.
+adaptive_boundary_norm = 0 # 0 (off), 1 (on).
+# BSSN eta.
+eta = 2.0
+bssn_flavor = "lagrangian" # lagrangian, eulerian.
+# Eulerian is nor supported right now!
+
+# INITIAL DATA.
+idata = "BrillWave" # Minkwoski, TestBed, Schwarschild, BrillWave.
+
+# Brill Parameters.
+brill_a0 = 11.0
+brill_sr0 = 1.0
+brill_sz0 = 1.0
+
+# Schwarschild mass.
+schwar_mass = 0.0
+
+# ELLIPTIC SOLVER
+ell_freq = "every" # every (every integration step), half (at dt/2), full (at dt).
+# Use permutation vector calculated at first solve.
+use_permutation = 0 # 0 (off), 1 (on).
+# Reset and recalculate permutation after perm_count_max solves.
+perm_count_max = 0
+# Use CGS preconditioner after first LU solve.
+use_preconditioner = 0 # 0 (off), 1 (on).
+# CGS tolerance 10**(-precond_L).
+precond_L = 0
+# Use Low Rank Update.
+use_low_rank = 1 # 0 (off), 1 (on).
+# Robin operator order at boundary.
+nrobin = 1 # 1 (typical), 2, 3.
+
+# AH FINDER
+ahfind_flag = 1 # 0 (off), 1 (on).
+# Interpolation type.
+ahfind_bicubic = 1 # 0 (bilinear), 1 (bicubic).
+# Calculate AH every t = ahfind_freq * dr.
+ahfind_freq = 2
+# Apply AH mask to zero-out constraints inside AH.
+ahfind_mask_filter = 1 # 0 (off), 1 (on).
+# Time at which to start AHF.
+ahfind_start_time = 0.80
+# Maximum and minimum radius at which to look for AH.
+ahfind_maxr = 1.50
+ahfind_minr = 1.20
+# Maximum number of bisection iterations to refine AH.
+ahfind_bis_iter = 50
+
+# WRITE FILES.
+ham = 0
+mom_r = 0
+mom_z = 0
+CDeltar = 0
+CDeltaz = 0
+Clambda = 0
+CA_lambda = 0
+alpha = 1
+beta_r = 0
+beta_z = 0
+a = 0
+b = 0
+h = 0
+c = 0
+lambda = 0
+g_a = 0
+g_b = 0
+g_h = 0
+g_c = 0
+g_lambda = 0
+hdet = 0
+phi = 0
+Deltar = 0
+Deltaz = 0
+divA_r = 0
+divA_z = 0
+ADeltar = 0
+ADeltaz = 0
+K = 0
+A_a = 0
+A_b = 0
+A_h = 0
+A_c = 0
+A_lambda = 0
+A2_a = 0
+A2_b = 0
+A2_h = 0
+A2_c = 0
+A2_lambda = 0
+A2 = 0
+upA_a = 0
+upA_b = 0
+upA_h = 0
+upA_c = 0
+R_a = 0
+R_b = 0
+R_h = 0
+R_c = 0
+R_lambda = 0
+RSCAL = 0
+D2alpha_a = 0
+D2alpha_b = 0
+D2alpha_h = 0
+D2alpha_c = 0
+D2alpha_lambda = 0
+LaplaAlpha = 0
+courant_rr = 0
+courant_th = 0
+courant_ph = 0
